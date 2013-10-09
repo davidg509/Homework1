@@ -48,7 +48,6 @@ body{
 	color: purple;
 }
 ul{
-	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 }
@@ -76,6 +75,14 @@ h1 {
 	font-family: 'Sniglet';
 	text-align: center;
 
+}
+
+dt {
+	padding-left: 15px;
+}
+
+dd{
+	padding-left: 30px;
 }
 
 h2{
