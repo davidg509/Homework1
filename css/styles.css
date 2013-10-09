@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Sniglet);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+
+@import url(reset.css);
+
+body{
+	background-image: url(../img/pizza.jpg);
+	background-size: 1300px 1100px;
+	background-repeat: repeat;
+	font-family: 'Sniglet' sans-serif;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.content-heading{
+	width: 90%;
+	background-image: url(../img/background.png);
+	background-color: #DDCB9B;
+	background-repeat: repeat;
+	margin: 0 auto;
+	box-shadow: 1px 1px 3px #555;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+
+.content-body{
+	width: 90%;
+	height: 40%;
+	background-image: url(../img/background.png);
+	background-color: #DDCB98;
+	margin: 0 auto;
+	box-shadow: 1px 1px 3px #555;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.aboutbody{
+	font-size: 80%;
+	padding: 10px;
+
+}
+
+.emphasize{
+	font-weight: bold;
+	font-family: 'Sniglet';
+	color: purple;
+}
+
+.oven{
+	width: 30%;
+	height: 15%;
+	border-radius: 10px;
+}
+
+.bike{
+	width: 30%;
+	height: 10%;
+	float: right;
+	padding: 10px;
+}
+
+p{
+	padding: 2px;
+}
+
+h1 {
+	font-size: 250%;
+	font-weight: bold;
+	font-family: 'Sniglet';
+	text-align: center;
+
+}
+
+h2{
+	font-size: 100%;
+	font-weight: bold;
+	font-family: 'Meriweather';
+	text-align: center;
+	font-style: italic;
+}
+
+h3{
+	font-size: 80%;
+	font-weight: bold;
+	font-family: 'Meriweather';
+	text-align: center;
+}
+
+nav ul{
+	width: 98%;
+	padding: 20px;
+	text-align: center;
+
+}
+
+.twitter-timeline{
+	width: 20%;
+	height: 18%;
+	padding: 5px;
+	position:fixed;
+	top:600px;
+	left:74%;
+}
+
+.logo{
+	float: right;
+	width: 160px;
+	height: 191px;
+	border-radius: 10px;
+}
+
+nav li {
+	background-color: #6A8A76;
+	font-color: #FFF;
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 100%;
+	padding: 5px;
+}
+
+nav a:link,
+nav a:visited {
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #DDCB9B;
+}
