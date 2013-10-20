@@ -2,76 +2,78 @@
 <html lang="en">
 	<head>
 		<title>Dawg Pizza</title>
+
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 		<meta charset="utf-8">
 		<meta name="author" content="davidg07">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
 	</head>
-
 	<body>
-
-		<div class="content-heading">
-			<a href="http://students.washington.edu/davidg07/info343/hw1/hw1/"><img class="logo" src="img/logo.png" alt="logo"></a>
-			<p><h1>Dawg Pizza</h1></p>
-			<p><h2>Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery! (206-555-1212)</h2></p>
-
-			<p><h3>Business Hours: Monday through Saturday, 10:00am to 11:00pm</h3></p>
-
-			<p><h3>4306 University Way NE, Seattle, WA 98105</h3></p>
-
-			<p><h3><a href="mailto:dawgpizzaseattle@gmail.com?Subject=Hello%20again"target="_top">dawgpizzaseattle@gmail.com</a></h3></p>
-			
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="menu.html">Menu</a></li>
-					<li><a href="jobs.html">Jobs</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="content-body">
-			<p><h2>Dawg Pizza Menu</h2></p>
-			<img class="bike" src="img/order.jpg" alt="counter">
-			<p class="newheading">Pizzas:</p>
-				<dt>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</dt>
-	    			<dd>Small (12")</dd>
-	    			<dd>Medium (14")</dd>
-	    			<dd>Large (17")</dd>
-
-    		<p class="emphasize">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
-
-    		<p class="newheading">Meat Pies:</p>
-				<dt>Classic Pepperoni</dt>
-    				<dd>Pepperoni and Mozzarella on our Spicy Tomato Sauce. $10/$13/$16</dd>
-	    		<dt>The Hawaiian</dt>
-	    			<dd>Canadian Bacon and Pineapple with Mozzarella on a rich Tomato Sauce.  $12/$14/$17</dd>
-	    		<dt>Duck, Duck, Goose</dt>
-	    			<dd>Roasted Duck and Goose with Bacon, Chestnuts on a rich Plum Sauce.  $15/$17/$19</dd>
-	    		<dt>The Bambi</dt>
-	    			<dd>Slow-cooked Venison with Red Cabbage on our famous Black Cherry Sauce.  $15/$17/$19</dd>
-	    		<dt>The Ultimate</dt>
-	    			<dd>Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2!  $15/$19/$23</dd>
-	    	<p class="newheading">Vegetarian Pies:</p>
-	    		<dt>Margherita</dt>
+		<div class="container">
+			<ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="active">Menu</li>
+                <li><a href="jobs.hmtl">Jobs</a></li>
+            </ol>		
+            <a href="http://students.washington.edu/davidg07/info343/hw1/hw1/"><img src="img/logo.png" class="img-responsive" alt="logo"></a>
+        <div class="jumbotron">
+			<div class="container">
+				<img src="img/order.jpg" alt="pizza guy" class="menu-pic"><h1>Menu </h1>
+    			<div class="col-md-4">
+			        <p class="headings">Meat Pies</p>
+				    <dt class="sub-heading">Classic Pepperoni</dt>
+	    				<dd>Pepperoni and Mozzarella on our Spicy Tomato Sauce. $10/$13/$16</dd>
+		    		<dt class="sub-heading">The Hawaiian</dt>
+		    			<dd>Canadian Bacon and Pineapple with Mozzarella on a rich Tomato Sauce.  $12/$14/$17</dd>
+		    		<dt class="sub-heading">Duck, Duck, Goose</dt>
+		    			<dd>Roasted Duck and Goose with Bacon, Chestnuts on a rich Plum Sauce.  $15/$17/$19</dd>
+		    		<dt class="sub-heading">The Bambi</dt>
+		    			<dd>Slow-cooked Venison with Red Cabbage on our famous Black Cherry Sauce.  $15/$17/$19</dd>
+		    		<dt class="sub-heading">The Ultimate</dt>
+		    			<dd>Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2!  $15/$19/$23</dd>
+			    </div>
+ 			 <div class="col-md-4">
+		        <p class="headings">Vegetarian Pies</p>
+	    		<dt class="sub-heading">Margherita</dt>
     				<dd>Mozzarella, Basil, Salt on an Olive Oil Base.  $10/$13/$16</dd>
-	    		<dt>Veggie Madness</dt>
+	    		<dt class="sub-heading">Veggie Madness</dt>
 	    			<dd>Mushroom, Black Olive, Onions, Roasted Garlic, Squash and Roasted Eggplant on our Spicy Tomato Sauce.  $11/$14/$17\\\</dd>
-	    		<dt>Forest Floor</dt>
+	    		<dt class="sub-heading">Forest Floor</dt>
 	    			<dd>Three kinds of mushrooms with Mozzarella on a herb Tomato Sauce.  $11/$14/$17</dd>
-	    		<dt>Mr Green</dt>
+	    		<dt class="sub-heading">Mr Green</dt>
 	    			<dd>Roasted Chicken with Romano on a Basil Pesto sauce. $13/$16/$19</dd>
-	    		<dt>Purple Monster</dt>
+	    		<dt class="sub-heading">Purple Monster</dt>
 	    			<dd>Roasted Eggplant and Cabbage stir fried in sesame oil on a rich Plum Sauce.  $11/$14/$17</dd>
+    		</div>
+    		 <div class="col-md-4">
+		    	<div class="content-body">
+				<p class="headings">Pizzas</p>
+					<dt>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</dt>
+		    			<dd>Small (12")</dd>
+		    			<dd>Medium (14")</dd>
+		    			<dd>Large (17")</dd>
 
-	    	<p class="newheading">Drinks:</p>
-	    			<dd>Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</dd>
-	    			<dd>Rainier Beer by the can ($4)</dd>
-	    			<dd>House Red Wine by the glass or bottle ($10/$40)</dd>
-	    	<p class="newheading">Dessert:</p>
-	    			<dd>Chocolate Gelato ($8)</dd>
-	    			<dd>Lemon Sorbet ($7)</dd>
-	    			<dd>Ricotta Cheese Cake ($10)</dd>
-			</dl>
-		</div>
+	    		<p class="sub-heading">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
+
+
+		    	<p class="headings">Drinks:</p>
+		    			<dd>Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</dd>
+		    			<dd>Rainier Beer by the can ($4)</dd>
+		    			<dd>House Red Wine by the glass or bottle ($10/$40)</dd>
+		    	<p class="headings">Dessert:</p>
+		    			<dd>Chocolate Gelato ($8)</dd>
+		    			<dd>Lemon Sorbet ($7)</dd>
+		    			<dd>Ricotta Cheese Cake ($10)</dd>
+				</dl>
+    		</div>
+    	</div>
+    </div>
+</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
 	</body>
 </html>
