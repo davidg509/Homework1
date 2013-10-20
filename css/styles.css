@@ -18,18 +18,21 @@ body{
 
 }
 
-.jumbotron{
-	font-family: 'Sniglet';
+.jobs-heading{
+	color: white;
+	font-size: 200%;
 }
+
 
 .img{
 	text-align: center;
 }
 
 .col{
-	width: 20%;
+	width: 10%;
 	float: right;
 }
+
 
 .col-pic{
 	width: 20%;
@@ -80,8 +83,9 @@ nav ul{
 }
 
 .twitter-timeline{
-	width: 20%;
-	height: 30%;
+	width: 40%;
+	height: 60%;
+	padding: 10px;
 }
 
 
