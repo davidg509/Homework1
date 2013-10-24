@@ -7,25 +7,50 @@
 
 body{
 	background-image: url(../img/pizza.jpg);
-	background-size: 100%;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: 'Sniglet' sans-serif;
 	font-size: 18px;
+
 }
 
 .img-responsive {
 	width: 50%;
+	float: bottom;
 
 }
+
+.pizzaguy{
+	width: 50%;
+	height: 2%;
+	float: top;
+}
+.row1{
+	background-color: white;
+}
+
+.container-box{
+	background-color: white;
+	box-shadow: 1px 1px 3px #555;
+	border-radius: 10px;
+}
+
+.container-boxmenu{
+	background-color: lightgray;
+	box-shadow: 1px 1px 3px #555;
+	border-radius: 10px;
+
+}
+
+
 
 .jobs-heading{
 	color: white;
 	font-size: 200%;
 }
 
-
-.img{
-	text-align: center;
+.breadcrumb{
+	color: red;
 }
 
 .col{
@@ -40,17 +65,35 @@ body{
 	padding: 2%;
 }
 
+
+
 .well{
 	text-align: center;
 	opacity: .5;
+	font-weight: bold;
+	color: black;
 }
 
 .menu-pic{
-	float: left;
-	width: 10%;
+	float: bottom;
+	width: 110%;
+	height: 200%;
 	margin-right: 1em;
 	margin-bottom: 1em;
-	padding: 0;
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 100px) {
+    .twitter-timeline{
+    	width: 100%;
+    	height: 100%;
+    }
+
+    .thumbnail{
+    	width: 50%;
+    	height: 50%;
+    }
+
 }
 
 .sub-heading{
@@ -65,7 +108,6 @@ p{
 	color: purple;
 }
 
-
 dt {
 	padding-left: 20px;
 }
@@ -75,17 +117,25 @@ dd{
 }
 
 
-nav ul{
-	width: 98%;
-	padding: 20px;
-	text-align: center;
-
-}
-
 .twitter-timeline{
 	width: 40%;
-	height: 60%;
-	padding: 10px;
+	height: 30%;
+	padding-left: 1%;
 }
+
+
+
+ 			 <div class="col-md-4">
+		        <h2><a href="#">Delivery Drivers</a></h2>
+		        <img src="img/guy.png" alt="pizza guy" class="pizzaguy">
+		        <p>Kitchen staff employees receive full ebenfits along with a minimum of $50.00 an hour. Some Dawg Pizza employees have reported making over $300,000 a year! So what are you waiting for? Apply now!</p>
+    		</div>
+ 			 <div class="col-md-4">
+		        <h2><a href="#">Taste Testers</a></h2>
+		        <img src="img/taste.jpg" alt="pizza guy" class="pizzaguy">
+		        <p>Do you like to eat pizza? Do you like all toppings? Are you willing to try a gumball and peanut butter pizza? If you answered yes to all those questions, Dawg Pizza wants you! Apply at our U-District location today!</p>
+    		</div>
+
+
 
 
