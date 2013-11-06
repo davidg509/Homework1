@@ -43,7 +43,6 @@ body{
 }
 
 
-
 .jobs-heading{
 	color: white;
 	font-size: 200%;
@@ -96,8 +95,8 @@ body{
 
 }
 
-.sub-heading{
-	color: red;
+.name{
+	color: purple;
 }
 p{
 	padding: 2px;
@@ -122,20 +121,6 @@ dd{
 	height: 30%;
 	padding-left: 1%;
 }
-
-
-
- 			 <div class="col-md-4">
-		        <h2><a href="#">Delivery Drivers</a></h2>
-		        <img src="img/guy.png" alt="pizza guy" class="pizzaguy">
-		        <p>Kitchen staff employees receive full ebenfits along with a minimum of $50.00 an hour. Some Dawg Pizza employees have reported making over $300,000 a year! So what are you waiting for? Apply now!</p>
-    		</div>
- 			 <div class="col-md-4">
-		        <h2><a href="#">Taste Testers</a></h2>
-		        <img src="img/taste.jpg" alt="pizza guy" class="pizzaguy">
-		        <p>Do you like to eat pizza? Do you like all toppings? Are you willing to try a gumball and peanut butter pizza? If you answered yes to all those questions, Dawg Pizza wants you! Apply at our U-District location today!</p>
-    		</div>
-
 
 
 
