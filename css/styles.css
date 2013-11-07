@@ -35,6 +35,11 @@ body{
 	border-radius: 10px;
 }
 
+.container-bk{
+	background-image: url(../img/back.png);
+	border-radius: 10px;
+}
+
 .container-boxmenu{
 	background-color: lightgray;
 	box-shadow: 1px 1px 3px #555;
@@ -42,6 +47,9 @@ body{
 
 }
 
+.dessert{
+	font-size: 20%;
+}
 
 .jobs-heading{
 	color: white;
@@ -50,6 +58,12 @@ body{
 
 .breadcrumb{
 	color: red;
+}
+
+.sub-heading{
+	color: red;
+	font-family: 'Sniglet';
+	font-size: 200%;
 }
 
 .col{
@@ -97,14 +111,14 @@ body{
 
 .name{
 	color: purple;
+	font-size: 90%;
 }
 p{
 	padding: 2px;
 }
 
-.headings{
-	font-size: 150%;
-	color: purple;
+.pizza{
+	font-size: 90%;
 }
 
 dt {
@@ -118,7 +132,7 @@ dd{
 
 .twitter-timeline{
 	width: 40%;
-	height: 30%;
+	height: 220%;
 	padding-left: 1%;
 }
 

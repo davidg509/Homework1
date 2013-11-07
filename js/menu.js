@@ -30,7 +30,7 @@ function render(pizzas, drinks, desserts){
 
 	    var clone=pizzaVariable.clone();
 	    clone.find('.name').html(drinks.name);
-	    clone.find('.prices').html(drinks.price);
+	    clone.find('.prices').html("$" + drinks.price);
 	    $('div.drinksheading').append(clone);
 	}
 	for (idx = 0; idx < com.dawgpizza.menu.desserts.length; ++idx) {
@@ -38,7 +38,7 @@ function render(pizzas, drinks, desserts){
 
 	    var clone=pizzaVariable.clone();
 	    clone.find('.name').html(desserts.name);
-	    clone.find('.prices').html(desserts.price);
+	    clone.find('.prices').html("$" + desserts.price);
 	    $('div.dessertheading').append(clone);
 	}
 }
