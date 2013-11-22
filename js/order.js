@@ -1,3 +1,7 @@
+
+
+
+
 function render(pizzas, drinks, desserts){
 	var idx;
 	var pizza;
@@ -14,6 +18,7 @@ function render(pizzas, drinks, desserts){
 	    var clone=pizzaVariable.clone();
 	    clone.find('.name').html(pizza.name);
 	    clone.find('.description').html(pizza.description);
+	    // buttons or list go here
 	    clone.find('.prices').html("$" + pizza.prices[0] + "/" + "$" + pizza.prices[1] + "/" + "$" + pizza.prices[2]);
 
 	    $('div.pizzaheading').append(clone);
@@ -42,4 +47,7 @@ function render(pizzas, drinks, desserts){
 
 $(function(){
 	render(com.dawgpizza.menu.pizzas, com.dawgpizza.menu.drinks, com.dawgpizza.menu.dessert);
+	// called button name.click.(methodname)
+
+	//add cart method
 });
