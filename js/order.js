@@ -111,7 +111,24 @@ $(function(){
     });
 
     $('.place-order').click(function(){
-        $('#myModal').modal()
+            $('#myModal').modal()
+    });
+        $(".submit-order").click(function(){
+        var info = $('.modal-body');
+        var input = {
+            name : info.find('input[name="first-name"]').val(),
+            address1 : info.find('input[name="addr-1"]').val(),
+            zip : info.find('input[name="zip"]').val(),
+            phone : info.find('input[name="phone"]').val()
+        };
+        cart.name = input.name;
+        cart.address1 = input.address1;
+        cart.zip = input.zip;
+        cart.phone = input.phone;
+         var myCart = cart;
+        var json = JSON.stringify(myCart);
+        $('.cartform').val(json);
+        $('.submit-order').submit();
     });
 
 }); //doc ready
