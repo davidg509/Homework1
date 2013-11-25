@@ -110,7 +110,9 @@ $(function(){
 
     });
 
-
+    $('.place-order').click(function(){
+        $('#myModal').modal()
+    });
 
 }); //doc ready
 
@@ -151,8 +153,8 @@ function renderCart(cart, container) {
         var idxToRemove = this.getAttribute('data-index');
         cart.items.splice(idxToRemove, 1);
         renderCart(cart, $('.cart-items-container'));
-
     });
+
 
     var total = 0;
     for(var idx = 0; idx < cart.items.length; idx++){
@@ -191,16 +193,8 @@ function postCart(cart, cartForm) {
     cartForm.submit();
 
 } //postCart()
-    $(".place-order").click(function(){
-         if (total >= 20) {
-            $("#submitOrderForm").modal();
-             $(".finalSubmitButton").click(submitForm);
-            $(".minimum").html("");
 
-        } else {
-            $(".minimum").html("To deliver, the total should be at least $20.");
-        }
-    });
+
  
 
 
