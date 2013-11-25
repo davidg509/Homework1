@@ -52,8 +52,16 @@ body{
 
 }
 
-.dessert{
-	font-size: 20%;
+.templates{
+	display: none;
+}
+
+.moveright{
+	float: right;
+}
+
+.cart-items-container{
+	float: right;
 }
 
 .jobs-heading{

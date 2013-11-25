@@ -37,11 +37,10 @@ $(function(){
 		this.alreadyInCart = function(item){
 			for(var idx = 0; i < item.length; ++idx){
 				if(this.items[i].name == item.name && this.item[i].size == item.size){
-					return i;
-				}else{
-					return -1;
+						return i;
 				}
 			}
+			return -1;
 		}
 
 		this.duplicateItems = function(item){
@@ -55,12 +54,11 @@ $(function(){
 		}
 
 		this.removeItem = function(item){
-			var idx = this.items.indexOf(item)
+			var idx = this.items.indexOf(item);
 			if(idx > -1){
 				this.items.splice(idx, 1);
 			}
 		}
-
 	}
 
 }
