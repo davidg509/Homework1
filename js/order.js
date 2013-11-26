@@ -1,7 +1,7 @@
 //document ready function
+
 $(function(){
     render(com.dawgpizza.menu.pizzas, com.dawgpizza.menu.drinks, com.dawgpizza.menu.dessert);
-
     function render(pizzas, drinks, desserts){
             var idx;
             var pizza;
@@ -95,15 +95,6 @@ $(function(){
         renderCart(cart, $('.cart-items-container'));
     });
 
-    $('.place-order').click(function(){
-        
-        //TODO: validate the cart to make sure all the required
-        //properties have been filled out, and that the 
-        //total order is greater than $20 (see homework 
-        //instructions) 
-
-        postCart(cart, $('.cart-form'));
-    });
    $('.remove-all').click(function(){
         cart.items = [];
         renderCart(cart, $('.cart-items-container'));
@@ -113,7 +104,7 @@ $(function(){
     $('.place-order').click(function(){
             $('#myModal').modal()
     });
-        $(".submit-order").click(function(){
+    $(".submit-order").click(function(){
         var info = $('.modal-body');
         var input = {
             name : info.find('input[name="first-name"]').val(),
@@ -125,10 +116,12 @@ $(function(){
         cart.address1 = input.address1;
         cart.zip = input.zip;
         cart.phone = input.phone;
-         var myCart = cart;
-        var json = JSON.stringify(myCart);
-        $('.cartform').val(json);
-        $('.submit-order').submit();
+        var myCart = cart;
+        //var json = JSON.stringify(myCart);
+        //$('.cartform').val(json);
+        $("#jsonForm").val(JSON.stringify(myCart));
+        $(".cartform").trigger('submit');
+
     });
 
 }); //doc ready
@@ -177,11 +170,12 @@ function renderCart(cart, container) {
     for(var idx = 0; idx < cart.items.length; idx++){
         var item = cart.items[idx].price;
         total += parseInt(item);
+
     }
 
     var num = total * 0.095;
     var taxes = num.toFixed(2);
-    var grandTotal = parseInt(total) + parseInt(taxes);
+    var grandTotal = parseFloat(total) + parseFloat(taxes);
 
     $('.total-price').html(total);
     $('.total-tax').html(taxes);
